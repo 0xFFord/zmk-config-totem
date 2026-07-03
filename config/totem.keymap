@@ -17,12 +17,11 @@
             timeout-ms = <100>;
             key-positions = <21 25>;
             bindings = <&tog 0>;
-            layers = <8>;
         };
 
         base {
             timeout-ms = <100>;
-            bindings = <&tog 8>;
+            bindings = <&tog 0>;
             key-positions = <21 14>;
             layers = <0>;
         };
@@ -30,188 +29,188 @@
         copy-combo {
             bindings = <&kp LG(C)>;
             key-positions = <12 23>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         up-combo {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 17>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         down-combo {
             bindings = <&kp DOWN>;
             key-positions = <17 28>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         left-combo {
             bindings = <&kp LEFT>;
             key-positions = <17 16>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         right-combo {
             bindings = <&kp RIGHT>;
             key-positions = <17 18>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         vol-up-combo {
             bindings = <&kp C_VOL_UP>;
             key-positions = <6 16>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         vol-down-combo {
             bindings = <&kp C_VOL_DN>;
             key-positions = <16 27>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         bright-up-combo {
             bindings = <&kp C_BRIGHTNESS_INC>;
             key-positions = <5 15>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         bright-down-combo {
             bindings = <&kp C_BRIGHTNESS_DEC>;
             key-positions = <15 26>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         prev-combo {
             bindings = <&kp C_PREV>;
             key-positions = <5 6>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         pause-combo {
             bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <6 7>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         next-combo {
             bindings = <&kp C_NEXT>;
             key-positions = <7 8>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         mute-combo {
             bindings = <&kp C_MUTE>;
             key-positions = <16 15>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         paste-combo {
             bindings = <&kp LG(V)>;
             key-positions = <13 24>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         stt-combo {
             bindings = <&kp LC(LA(LS(V)))>;
             key-positions = <14 25>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         page_back {
             bindings = <&kp LG(LEFT_BRACKET)>;
             key-positions = <1 2>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         page_next {
             bindings = <&kp LG(RIGHT_BRACKET)>;
             key-positions = <2 3>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         sleep {
             bindings = <&kp LC(LG(Q))>;
             key-positions = <8 9>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         colon {
             bindings = <&kp SEMI>;
             key-positions = <8 18>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         apos {
             bindings = <&kp APOS>;
             key-positions = <9 19>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         esc {
             bindings = <&kp LG(TAB)>;
             key-positions = <13 14>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         browser {
             bindings = <&kp LS(LA(LC(LG(A))))>;
             key-positions = <10 21>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         esc2 {
             bindings = <&kp ESC>;
             key-positions = <2 12>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <3 13>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         oneshot_hyper {
-            bindings = <&sl 6>;
+            bindings = <&sl 5>;
             key-positions = <33 34>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         bt_layer {
             timeout-ms = <100>;
-            bindings = <&sl 7>;
+            bindings = <&sl 6>;
             key-positions = <29 30>;
-            layers = <0 1 2 8>;
+            layers = <0 1 2>;
         };
 
         mst {
             bindings = <&kp LS(LG(T))>;
             key-positions = <12 3>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
         raycast {
             bindings = <&kp F13>;
             key-positions = <4 14>;
-            layers = <0 1 2 7 8>;
+            layers = <0 1 2 6>;
         };
 
-        gaming_v1_layer {
+        gaming_layer {
             bindings = <&to 3>;
-            key-positions = <23 24>;
-            layers = <0 9>;
+            key-positions = <8 9>;
+            layers = <0 3>;
         };
 
         asergo_layer {
             bindings = <&to 0>;
-            key-positions = <22 23>;
-            layers = <3 9>;
+            key-positions = <7 8>;
+            layers = <3>;
         };
 
-        gaming_v2_layer {
-            bindings = <&to 9>;
-            key-positions = <25 24>;
-            layers = <0 3>;
+        clear_kp_layer {
+            bindings = <&to 7>;
+            key-positions = <7 8 9>;
+            layers = <3>;
         };
     };
 
@@ -262,40 +261,25 @@
             >;
         };
 
-        /*
-         * Gaming stack: layer 3 is low-latency direct QWERTY controls; layer 4
-         * is a held hotbar/util layer; layer 5 is a one-shot function layer.
-         * Normal combos are scoped away from layers 3/4/5 to avoid game latency.
-         */
-
-        gaming_v1_layer_3 {
+        gaming_layer_3 {
             bindings = <
-        &kp LEFT_ALT  &kp Q  &kp X   &kp E  &kp R        &trans  &trans  &trans  &trans  &trans
-        &kp LCTRL     &kp A  &kp W   &kp D  &kp F        &trans  &trans  &trans  &trans  &trans
-&trans  &kp LSHFT     &kp Z  &kp S   &kp C  &kp V        &trans  &trans  &trans  &trans  &trans  &trans
-                             &trans  &mo 4  &kp SPACE    &trans  &trans  &trans
+        &kp TAB           &kp N1  &kp N2  &kp N3  &kp N4       &kp Y    &kp U    &kp K      &kp L    &kp MINUS
+        &kp LEFT_CONTROL  &kp A   &kp W   &kp D   &kp R        &kp H    &kp N    &kp I      &kp O    &kp P
+&trans  &kp LSHFT         &kp Q   &kp S   &kp E   &kp F        &kp J    &kp M    &kp COMMA  &kp DOT  &kp FSLH   &trans
+                                  &trans  &mo 4   &kp SPACE    &kp RET  &kp TAB  &trans
             >;
         };
 
         gaming_plus_layer_4 {
             bindings = <
-        &kp BACKSPACE  &trans  &kp ESC  &kp TAB  &kp T     &trans  &trans  &trans  &trans  &trans
-        &sl 5          &kp N1  &kp N2   &kp N3   &kp G     &trans  &trans  &trans  &trans  &trans
-&trans  &kp ENTER      &kp N4  &kp N5   &kp N6   &kp B     &trans  &trans  &trans  &trans  &trans  &trans
-                               &trans   &trans   &trans    &trans  &trans  &trans
+        &tog 0  &kp GRAVE  &kp ESC  &kp F3  &kp T     &trans  &trans  &trans  &trans  &trans
+        &trans  &trans     &trans   &trans  &kp G     &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp Z      &kp X    &kp C   &kp V     &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans   &trans  &trans    &trans  &trans  &trans
             >;
         };
 
-        gaming_plus_oneshot_layer_5 {
-            bindings = <
-        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp F4  &kp F5  &kp F6  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
-            >;
-        };
-
-        hyper_oneshot_layer_6 {
+        hyper_oneshot_layer_5 {
             bindings = <
         &kp LS(LA(LC(LG(Q))))  &kp LS(LA(LC(LG(W))))  &kp LS(LA(LC(LG(D))))  &kp LS(LA(LC(LG(T))))     &kp LS(LA(LC(LG(F))))        &kp LS(LA(LC(LG(Y))))    &kp LS(LA(LC(LG(U))))    &kp LS(LA(LC(LG(K))))      &kp LS(LA(LC(LG(L))))    &kp LS(LA(LC(LG(MINUS))))
         &kp LS(LA(LC(LG(A))))  &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(E))))  &kp LS(LA(LC(LG(R))))     &kp LS(LA(LC(LG(G))))        &kp LS(LA(LC(LG(H))))    &kp LS(LA(LC(LG(N))))    &kp LS(LA(LC(LG(I))))      &kp LS(LA(LC(LG(O))))    &kp LS(LA(LC(LG(P))))
@@ -304,36 +288,31 @@
             >;
         };
 
-        /*
-         * Right-hand one-shot Bluetooth controls. Profiles 0/1/2 are intended
-         * for MacBook, Mac Mini, and Pixel 9 Pro respectively.
-         */
-
-        bt_layer_7 {
+        bt_layer_6 {
             label = "BT";
             bindings = <
-        &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+        &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3  &bt BT_SEL 4
         &trans  &trans  &trans  &trans  &trans    &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &out OUT_BLE  &out OUT_USB
-&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_PRV     &bt BT_NXT     &bt BT_CLR    &out OUT_TOG  &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_PRV     &bt BT_NXT     &bt BT_CLR     &out OUT_TOG  &trans        &trans
                         &trans  &trans  &trans    &trans         &trans         &trans
             >;
         };
 
-        media_unused_layer_8 {
+        clear_kp_layer_7 {
             bindings = <
-        &trans     &trans    &trans    &trans     &trans               &trans  &kp F7  &kp F8  &kp F9  &kp F12
-        &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &kp LC(LA(LSHFT))    &trans  &kp F1  &kp F2  &kp F3  &kp F10
-&trans  &trans     &trans    &trans    &trans     &trans               &trans  &kp F4  &kp F5  &kp F6  &kp F11  &trans
-                             &trans    &trans     &trans               &trans  &trans  &trans
+        &kp Q  &kp W  &kp D   &kp T  &kp F        &kp Y    &kp U    &kp K      &kp L    &kp MINUS
+        &kp A  &kp S  &kp E   &kp R  &kp G        &kp H    &kp N    &kp I      &kp O    &kp P
+&trans  &kp X  &kp Z  &kp C   &kp V  &kp B        &kp J    &kp M    &kp COMMA  &kp DOT  &kp FSLH   &trans
+                      &trans  &mo 8  &kp SPACE    &kp RET  &kp TAB  &trans
             >;
         };
 
-        gaming_v2_layer_9 {
+        gaming_plus_v2_layer_8 {
             bindings = <
-        &kp TAB    &kp N1  &kp N2  &kp N3  &kp N4       &trans  &trans  &trans  &trans  &trans
-        &kp ESC    &kp A   &kp W   &kp D   &kp R        &trans  &trans  &trans  &trans  &trans
-&trans  &kp LSHFT  &kp Q   &kp S   &kp E   &kp F        &trans  &trans  &trans  &trans  &trans  &trans
-                           &trans  &mo 4   &kp SPACE    &trans  &trans  &trans
+        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &kp N6    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N8  &trans  &kp N9  &kp N7    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
