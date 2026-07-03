@@ -13,65 +13,52 @@
     combos {
         compatible = "zmk,combos";
 
-        asergo {
-            timeout-ms = <100>;
-            key-positions = <21 25>;
-            bindings = <&tog 0>;
-        };
-
-        base {
-            timeout-ms = <100>;
-            bindings = <&tog 0>;
-            key-positions = <21 14>;
-            layers = <0>;
-        };
-
         copy-combo {
             bindings = <&kp LG(C)>;
             key-positions = <12 23>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         up-combo {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 17>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         down-combo {
             bindings = <&kp DOWN>;
             key-positions = <17 28>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         left-combo {
             bindings = <&kp LEFT>;
             key-positions = <17 16>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         right-combo {
             bindings = <&kp RIGHT>;
             key-positions = <17 18>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         vol-up-combo {
             bindings = <&kp C_VOL_UP>;
             key-positions = <6 16>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         vol-down-combo {
             bindings = <&kp C_VOL_DN>;
             key-positions = <16 27>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         bright-up-combo {
             bindings = <&kp C_BRIGHTNESS_INC>;
             key-positions = <5 15>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         bright-down-combo {
@@ -83,134 +70,140 @@
         prev-combo {
             bindings = <&kp C_PREV>;
             key-positions = <5 6>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         pause-combo {
             bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <6 7>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         next-combo {
             bindings = <&kp C_NEXT>;
             key-positions = <7 8>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         mute-combo {
             bindings = <&kp C_MUTE>;
             key-positions = <16 15>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         paste-combo {
             bindings = <&kp LG(V)>;
             key-positions = <13 24>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         stt-combo {
             bindings = <&kp LC(LA(LS(V)))>;
             key-positions = <14 25>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         page_back {
             bindings = <&kp LG(LEFT_BRACKET)>;
             key-positions = <1 2>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         page_next {
             bindings = <&kp LG(RIGHT_BRACKET)>;
             key-positions = <2 3>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         sleep {
             bindings = <&kp LC(LG(Q))>;
             key-positions = <8 9>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         colon {
             bindings = <&kp SEMI>;
             key-positions = <8 18>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         apos {
             bindings = <&kp APOS>;
             key-positions = <9 19>;
-            layers = <0 1 2 6>;
+            layers = <0>;
+        };
+
+        cmd_tab {
+            bindings = <&kp LG(TAB)>;
+            key-positions = <13 14>;
+            layers = <0>;
         };
 
         esc {
-            bindings = <&kp LG(TAB)>;
-            key-positions = <13 14>;
-            layers = <0 1 2 6>;
-        };
-
-        browser {
-            bindings = <&kp LS(LA(LC(LG(A))))>;
-            key-positions = <10 21>;
-            layers = <0 1 2 6>;
-        };
-
-        esc2 {
             bindings = <&kp ESC>;
             key-positions = <2 12>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         tab {
             bindings = <&kp TAB>;
             key-positions = <3 13>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         oneshot_hyper {
             bindings = <&sl 5>;
             key-positions = <33 34>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         bt_layer {
             timeout-ms = <100>;
             bindings = <&sl 6>;
             key-positions = <29 30>;
-            layers = <0 1 2>;
+            layers = <0>;
         };
 
         mst {
             bindings = <&kp LS(LG(T))>;
             key-positions = <12 3>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         raycast {
             bindings = <&kp F13>;
             key-positions = <4 14>;
-            layers = <0 1 2 6>;
+            layers = <0>;
         };
 
         gaming_layer {
             bindings = <&to 3>;
-            key-positions = <8 9>;
-            layers = <0 3>;
+            key-positions = <28 29>;
+            layers = <0 7>;
         };
 
         asergo_layer {
             bindings = <&to 0>;
-            key-positions = <7 8>;
-            layers = <3>;
+            key-positions = <28 27>;
+            layers = <3 7>;
         };
 
         clear_kp_layer {
             bindings = <&to 7>;
-            key-positions = <7 8 9>;
-            layers = <3>;
+            key-positions = <27 28 29>;
+            layers = <3 0>;
+        };
+
+        gaming_2_layer {
+            bindings = <&tog 4>;
+            key-positions = <0 10>;
+            layers = <0>;
+        };
+
+        clear_kp_2_layer {
+            bindings = <&tog 8>;
+            key-positions = <10 21>;
+            layers = <0>;
         };
     };
 
