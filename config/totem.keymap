@@ -195,7 +195,7 @@
         };
 
         gaming_2_layer {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <0 10>;
             layers = <0>;
         };
