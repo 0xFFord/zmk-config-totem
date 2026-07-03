@@ -265,7 +265,7 @@
 
         gaming_plus_layer_4 {
             bindings = <
-        &tog 0  &kp GRAVE  &kp ESC  &kp F3  &kp T     &trans  &trans  &trans  &trans  &trans
+        &to 0   &kp GRAVE  &kp ESC  &kp F3  &kp T     &trans  &trans  &trans  &trans  &trans
         &trans  &trans     &trans   &trans  &kp G     &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp Z      &kp X    &kp C   &kp V     &trans  &trans  &trans  &trans  &trans  &trans
                            &trans   &trans  &trans    &trans  &trans  &trans
