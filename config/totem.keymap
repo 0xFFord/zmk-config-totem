@@ -238,10 +238,10 @@
 
         spc_layer_1 {
             bindings = <
-        &kp N1           &kp N2    &kp N3    &kp N4     &kp N5                        &kp N6                  &kp N7    &kp N8    &kp N9  &kp N0
-        &mt LCTRL GRAVE  &kp LALT  &kp LGUI  &kp LSHFT  &mt LA(LC(LEFT_SHIFT)) F11    &mt RA(RC(RSHIFT)) F12  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT
-&trans  &kp F1           &kp F2    &kp F3    &kp F4     &kp F5                        &kp F6                  &kp F7    &kp F8    &kp F9  &kp F10    &trans
-                                   &trans    &trans     &trans                        &trans                  &trans    &trans
+        &kp N1           &kp N2    &kp N3    &kp N4     &kp N5                        &kp N6                 &kp N7              &kp N8                &kp N9            &kp N0
+        &mt LCTRL GRAVE  &kp LALT  &kp LGUI  &kp LSHFT  &mt LA(LC(LEFT_SHIFT)) F11    &mt RA(RC(RSHIFT)) F1  &mt RIGHT_SHIFT F2  &mt RIGHT_COMMAND F3  &mt RIGHT_ALT F4  &mt RIGHT_CONTROL F5
+&trans  &trans           &trans    &kp F3    &trans     &trans                        &kp F6                 &kp F7              &kp F8                &kp F9            &kp F10               &trans
+                                   &trans    &trans     &trans                        &trans                 &trans              &trans
             >;
         };
 
