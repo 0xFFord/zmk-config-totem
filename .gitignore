@@ -1,3 +1,10 @@
 .DS_Store
 firmware/
 __pycache__/
+*.zip
+*.original.md
+
+# Local west workspace (only exists if a local build is ever attempted)
+build/
+.west/
+.venv/
