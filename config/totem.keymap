@@ -177,7 +177,7 @@
         };
 
         gaming_layer {
-            bindings = <&tog 8>;
+            bindings = <&tog 3>;
             key-positions = <31 37>;
             layers = <0>;
         };
@@ -205,10 +205,10 @@
 
         asergo_layer_0 {
             bindings = <
-        &kp Q               &kp W           &kp D               &kp T                &kp F                       &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
-        &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND E  &mt LEFT_SHIFT R     &mt LA(LC(LEFT_SHIFT)) G    &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
-&trans  &kp X               &kp Z           &kp C               &kp V                &kp B                       &kp J                      &kp M              &kp COMMA            &kp DOT          &mt RS(RA(RC(RIGHT_META))) FSLH  &trans
-                                            &trans              &mt LEFT_SHIFT BSPC  &lt 1 SPACE                 &lt 2 RET                  &mt RIGHT_ALT TAB  &trans
+       &kp Q               &kp W           &kp D               &kp T                &kp F                       &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
+       &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND E  &mt LEFT_SHIFT R     &mt LA(LC(LEFT_SHIFT)) G    &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
+&mo 7  &kp X               &kp Z           &kp C               &kp V                &kp B                       &kp J                      &kp M              &kp COMMA            &kp DOT          &mt RS(RA(RC(RIGHT_META))) FSLH  &trans
+                                           &trans              &mt LEFT_SHIFT BSPC  &lt 1 SPACE                 &lt 2 RET                  &mt RIGHT_ALT TAB  &trans
             >;
         };
 
