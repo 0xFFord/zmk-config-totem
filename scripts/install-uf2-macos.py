@@ -115,8 +115,14 @@ def wait_for_disappear(volume: Path, timeout_seconds: int = 45) -> bool:
 
 
 def expected_auto_disconnect_error(error: OSError) -> bool:
+    # The UF2 bootloader reboots and drops the mass-storage volume the instant it
+    # accepts the image, so the copy's final flush/fsync/close can fail with one
+    # of these. macOS most often surfaces this as EIO (Errno 5). This is only
+    # treated as success when the full source size was written (see
+    # copy_firmware_file); a mid-transfer error still fails as an incomplete flash.
     expected_errnos = {
         errno.ENOENT,
+        getattr(errno, "EIO", -1),
         getattr(errno, "ENOTCONN", -1),
         getattr(errno, "ENXIO", -1),
     }
