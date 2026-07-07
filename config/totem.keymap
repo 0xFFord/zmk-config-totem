@@ -177,33 +177,21 @@
         };
 
         gaming_layer {
-            bindings = <&to 3>;
-            key-positions = <28 29>;
-            layers = <0 7>;
-        };
-
-        asergo_layer {
-            bindings = <&to 0>;
-            key-positions = <28 27>;
-            layers = <3 7>;
-        };
-
-        clear_kp_layer {
-            bindings = <&to 7>;
-            key-positions = <27 28 29>;
-            layers = <3 0>;
-        };
-
-        gaming_2_layer {
-            bindings = <&tog 3>;
-            key-positions = <0 10>;
-            layers = <0>;
-        };
-
-        clear_kp_2_layer {
             bindings = <&tog 8>;
-            key-positions = <10 21>;
+            key-positions = <31 37>;
             layers = <0>;
+        };
+    };
+
+    behaviors {
+        gui_space_tab_morph: gui_space_tab_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GUI_SPACE_TAB_MORPH";
+            bindings = <&kp SPACE>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
         };
     };
 
@@ -279,21 +267,21 @@
             >;
         };
 
-        clear_kp_layer_7 {
+        clean_layer_7 {
             bindings = <
-        &kp Q  &kp W  &kp D   &kp T  &kp F        &kp Y    &kp U    &kp K      &kp L    &kp MINUS
-        &kp A  &kp S  &kp E   &kp R  &kp G        &kp H    &kp N    &kp I      &kp O    &kp P
-&trans  &kp X  &kp Z  &kp C   &kp V  &kp B        &kp J    &kp M    &kp COMMA  &kp DOT  &kp FSLH   &trans
-                      &trans  &mo 8  &kp SPACE    &kp RET  &kp TAB  &trans
+       &kp Q  &kp W  &kp D      &kp T     &kp F        &kp Y    &kp U    &kp K      &kp L    &kp MINUS
+       &kp A  &kp S  &kp E      &kp R     &kp G        &kp H    &kp N    &kp I      &kp O    &kp P
+&mo 8  &kp X  &kp Z  &kp C      &kp V     &kp B        &kp J    &kp M    &kp COMMA  &kp DOT  &kp FSLH   &trans
+                     &kp ENTER  &kp BSPC  &kp SPACE    &kp RET  &kp TAB  &trans
             >;
         };
 
-        gaming_plus_v2_layer_8 {
+        clean_plus_layer_8 {
             bindings = <
-        &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &kp N6    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N8  &trans  &kp N9  &kp N7    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+        &kp N1  &kp N2  &kp N3   &kp N4   &kp N5     &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+        &to 0   &trans  &trans   &trans   &kp F16    &trans  &trans  &trans  &trans  &trans
+&trans  &to 7   &kp F2  &kp F3   &kp F14  &kp F15    &trans  &trans  &trans  &trans  &trans  &trans
+                        &kp ESC  &kp TAB  &trans     &trans  &trans  &trans
             >;
         };
     };
