@@ -179,7 +179,7 @@
         gaming_layer {
             bindings = <&tog 3>;
             key-positions = <31 37>;
-            layers = <0>;
+            layers = <0 7>;
         };
     };
 
@@ -207,7 +207,7 @@
             bindings = <
        &kp Q               &kp W           &kp D               &kp T                &kp F                       &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
        &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND E  &mt LEFT_SHIFT R     &mt LA(LC(LEFT_SHIFT)) G    &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
-&mo 7  &kp X               &kp Z           &kp C               &kp V                &kp B                       &kp J                      &kp M              &kp COMMA            &kp DOT          &mt RS(RA(RC(RIGHT_META))) FSLH  &trans
+&mo 8  &kp X               &kp Z           &kp C               &kp V                &kp B                       &kp J                      &kp M              &kp COMMA            &kp DOT          &mt RS(RA(RC(RIGHT_META))) FSLH  &trans
                                            &trans              &mt LEFT_SHIFT BSPC  &lt 1 SPACE                 &lt 2 RET                  &mt RIGHT_ALT TAB  &trans
             >;
         };
@@ -232,10 +232,10 @@
 
         gaming_layer_3 {
             bindings = <
-        &kp TAB           &kp N1  &kp N2  &kp N3  &kp N4       &kp Y    &kp U    &kp K      &kp L    &kp MINUS
-        &kp LEFT_CONTROL  &kp A   &kp W   &kp D   &kp R        &kp H    &kp N    &kp I      &kp O    &kp P
-&trans  &kp LSHFT         &kp Q   &kp S   &kp E   &kp F        &kp J    &kp M    &kp COMMA  &kp DOT  &kp FSLH   &trans
-                                  &trans  &mo 4   &kp SPACE    &kp RET  &kp TAB  &trans
+       &kp TAB           &kp N1  &kp N2  &kp N3  &kp N4       &kp Y    &kp U    &kp K      &kp L    &kp MINUS
+       &kp LEFT_CONTROL  &kp A   &kp W   &kp D   &kp R        &kp H    &kp N    &kp I      &kp O    &kp P
+&mo 8  &kp LSHFT         &kp Q   &kp S   &kp E   &kp F        &kp J    &kp M    &kp COMMA  &kp DOT  &kp FSLH   &trans
+                                 &trans  &mo 4   &kp SPACE    &kp RET  &kp TAB  &trans
             >;
         };
 
