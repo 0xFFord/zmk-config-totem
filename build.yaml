@@ -3,4 +3,7 @@ include:
     shield: totem_left
   - board: seeeduino_xiao_ble
     shield: totem_right
-# there is no settingsreset (needed) for the XIAO
+  # settings_reset firmware wipes BLE bonds/settings. Flash it to a half when
+  # the halves stop pairing, then reflash that half's normal firmware.
+  - board: seeeduino_xiao_ble
+    shield: settings_reset

@@ -1,0 +1,16 @@
+name: Lint
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Shell syntax
+        run: bash -n scripts/*.sh scripts/lib/*.sh
+      - name: ShellCheck
+        run: shellcheck -x --severity=warning scripts/*.sh scripts/lib/*.sh
+      - name: Python syntax
+        run: python3 -m py_compile scripts/*.py
+      - name: Keymap shape
+        run: python3 scripts/validate-keymap-shape.py config/totem.keymap
