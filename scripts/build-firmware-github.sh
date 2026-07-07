@@ -7,8 +7,12 @@ ARTIFACT="${GITHUB_FIRMWARE_ARTIFACT:-firmware}"
 DOWNLOAD_DIR="${GITHUB_FIRMWARE_DIR:-${ROOT}/firmware}"
 COMMIT_MESSAGE="${1:-}"
 DEFAULT_COMMIT_PATHS=(config build.yaml .github/workflows)
+source "${ROOT}/scripts/lib/build-lock.sh"
 
 cd "${ROOT}"
+export GIT_TERMINAL_PROMPT=0
+
+acquire_build_lock
 
 if ! command -v gh >/dev/null 2>&1; then
   echo "GitHub CLI (gh) was not found." >&2
@@ -16,6 +20,14 @@ if ! command -v gh >/dev/null 2>&1; then
 fi
 
 gh auth status >/dev/null
+if [ "${GITHUB_FIRMWARE_SKIP_AUTH_SETUP:-}" = "1" ]; then
+  :
+elif git config --global --get-all credential."https://github.com".helper 2>/dev/null | grep -q 'gh'; then
+  :
+elif ! gh auth setup-git >/dev/null 2>&1; then
+  echo "Warning: could not update git credential setup from gh auth; continuing." >&2
+fi
+./scripts/validate-keymap-shape.py --quiet config/totem.keymap
 
 branch="$(git branch --show-current)"
 if [ -z "${branch}" ]; then
@@ -70,23 +82,21 @@ fi
 printf '%s\n' "${push_output}"
 
 run_id=""
-if [[ "${push_output}" != *"Everything up-to-date"* ]]; then
-  for _ in $(seq 1 20); do
-    run_id="$(gh run list \
-      --repo "${repo}" \
-      --workflow "${WORKFLOW}" \
-      --commit "${sha}" \
-      --limit 1 \
-      --json databaseId \
-      --jq '.[0].databaseId // ""')"
+for _ in $(seq 1 20); do
+  run_id="$(gh run list \
+    --repo "${repo}" \
+    --workflow "${WORKFLOW}" \
+    --commit "${sha}" \
+    --limit 1 \
+    --json databaseId \
+    --jq '.[0].databaseId // ""')"
 
-    if [ -n "${run_id}" ]; then
-      break
-    fi
+  if [ -n "${run_id}" ]; then
+    break
+  fi
 
-    sleep 3
-  done
-fi
+  sleep 3
+done
 
 if [ -z "${run_id}" ]; then
   echo "No push-triggered run found for ${sha}; triggering workflow_dispatch on ${branch}..."
@@ -116,7 +126,11 @@ if [ -z "${run_id}" ]; then
 fi
 
 echo "Watching GitHub Actions run ${run_id}..."
-gh run watch "${run_id}" --repo "${repo}" --exit-status
+watch_args=("${run_id}" --repo "${repo}" --exit-status)
+if gh run watch --help 2>/dev/null | grep -q -- '--compact'; then
+  watch_args+=(--compact)
+fi
+gh run watch "${watch_args[@]}"
 
 rm -rf "${DOWNLOAD_DIR}"
 mkdir -p "${DOWNLOAD_DIR}"
