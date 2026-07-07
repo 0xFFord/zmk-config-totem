@@ -1,0 +1,438 @@
+layout: {zmk_keyboard: totem}
+layers:
+  asergo_layer_0:
+  - Q
+  - W
+  - D
+  - T
+  - F
+  - Y
+  - U
+  - K
+  - L
+  - '-'
+  - {t: A, h: LEFT CONTROL}
+  - {t: S, h: LEFT ALT}
+  - {t: E, h: LEFT COMMAND}
+  - {t: R, h: LEFT SHIFT}
+  - {t: G, h: Alt+Ctl+LEFT SHIFT}
+  - {t: H, h: AltGr+Ctl+RIGHT SHIFT}
+  - {t: N, h: RIGHT SHIFT}
+  - {t: I, h: RIGHT COMMAND}
+  - {t: O, h: RIGHT ALT}
+  - {t: P, h: RIGHT CONTROL}
+  - {t: ▽, type: trans}
+  - X
+  - Z
+  - C
+  - V
+  - B
+  - J
+  - M
+  - ','
+  - .
+  - {t: /, h: Sft+AltGr+Ctl+RIGHT META}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BSPC, h: LEFT SHIFT}
+  - {t: SPACE, h: spc_layer_1}
+  - {t: RET, h: ret_layer_2}
+  - {t: TAB, h: RIGHT ALT}
+  - {t: ▽, type: trans}
+  spc_layer_1:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: '`', h: LCTRL}
+  - LALT
+  - LGUI
+  - LSHFT
+  - {t: F11, h: Alt+Ctl+LEFT SHIFT}
+  - {t: F1, h: AltGr+Ctl+RSHIFT}
+  - {t: F2, h: RIGHT SHIFT}
+  - {t: F3, h: RIGHT COMMAND}
+  - {t: F4, h: RIGHT ALT}
+  - {t: F5, h: RIGHT CONTROL}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F3
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  ret_layer_2:
+  - \
+  - Sft+&
+  - Sft+*
+  - Sft+~
+  - '['
+  - ']'
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - {t: '`', h: LEFT CONTROL}
+  - {t: '!', h: LEFT ALT}
+  - {t: '@', h: LEFT GUI}
+  - {t: '#', h: LEFT SHIFT}
+  - {t: (, h: Alt+Ctl+LEFT SHIFT}
+  - {t: KP RIGHT PARENTHESIS, h: AltGr+Ctl+RIGHT SHIFT}
+  - {t: '1', h: RIGHT SHIFT}
+  - {t: '2', h: RIGHT COMMAND}
+  - {t: '3', h: RIGHT ALT}
+  - {t: '0', h: RIGHT CONTROL}
+  - {t: ▽, type: trans}
+  - {t: '|', h: Meh+LEFT META}
+  - Sft+$
+  - Sft+%
+  - Sft+^
+  - Sft+{
+  - Sft+}
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  gaming_layer_3:
+  - TAB
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - Y
+  - U
+  - K
+  - L
+  - '-'
+  - LEFT CONTROL
+  - A
+  - W
+  - D
+  - R
+  - H
+  - N
+  - I
+  - O
+  - P
+  - {t: ▽, type: trans}
+  - LSHFT
+  - Q
+  - S
+  - E
+  - F
+  - J
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - gaming_plus_layer_4
+  - SPACE
+  - RET
+  - TAB
+  - {t: ▽, type: trans}
+  gaming_plus_layer_4:
+  - {t: asergo_layer_0, h: toggle}
+  - '`'
+  - ESC
+  - F3
+  - T
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - G
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  hyper_oneshot_layer_5:
+  - Hyper+Q
+  - Hyper+W
+  - Hyper+D
+  - Hyper+T
+  - Hyper+F
+  - Hyper+Y
+  - Hyper+U
+  - Hyper+K
+  - Hyper+L
+  - Hyper+-
+  - Hyper+A
+  - Hyper+S
+  - Hyper+E
+  - Hyper+R
+  - Hyper+G
+  - Hyper+H
+  - Hyper+N
+  - Hyper+I
+  - Hyper+O
+  - Hyper+P
+  - {t: ▽, type: trans}
+  - Hyper+X
+  - Hyper+Z
+  - Hyper+C
+  - Hyper+V
+  - Hyper+B
+  - Hyper+J
+  - Hyper+M
+  - Hyper+,
+  - Hyper+.
+  - Hyper+/
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: Hyper+BSPC, type: held}
+  - {t: Hyper+SPACE, type: held}
+  - Hyper+RET
+  - Hyper+TAB
+  - {t: ▽, type: trans}
+  BT:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '2'}
+  - OUT BLE
+  - OUT USB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - BT PRV
+  - BT NXT
+  - BT CLR
+  - {t: OUT TOG, type: held}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  clean_layer_7:
+  - Q
+  - W
+  - D
+  - T
+  - F
+  - Y
+  - U
+  - K
+  - L
+  - '-'
+  - A
+  - S
+  - E
+  - R
+  - G
+  - H
+  - N
+  - I
+  - O
+  - P
+  - clean_plus_layer_8
+  - X
+  - Z
+  - C
+  - V
+  - B
+  - J
+  - M
+  - ','
+  - .
+  - /
+  - {t: ▽, type: trans}
+  - ENTER
+  - BSPC
+  - SPACE
+  - RET
+  - TAB
+  - {t: ▽, type: trans}
+  clean_plus_layer_8:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: asergo_layer_0, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F16
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: clean_layer_7, h: toggle}
+  - F2
+  - F3
+  - F14
+  - F15
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ESC
+  - TAB
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [12, 23]
+  k: Gui+C
+  l: [asergo_layer_0]
+- p: [7, 17]
+  k: UP ARROW
+  l: [asergo_layer_0]
+- p: [17, 28]
+  k: DOWN
+  l: [asergo_layer_0]
+- p: [17, 16]
+  k: LEFT
+  l: [asergo_layer_0]
+- p: [17, 18]
+  k: RIGHT
+  l: [asergo_layer_0]
+- p: [6, 16]
+  k: VOL UP
+  l: [asergo_layer_0]
+- p: [16, 27]
+  k: VOL DN
+  l: [asergo_layer_0]
+- p: [5, 15]
+  k: BRIGHTNESS INC
+  l: [asergo_layer_0]
+- p: [15, 26]
+  k: BRIGHTNESS DEC
+  l: [asergo_layer_0, spc_layer_1, ret_layer_2, BT]
+- p: [5, 6]
+  k: PREV
+  l: [asergo_layer_0]
+- p: [6, 7]
+  k: PLAY PAUSE
+  l: [asergo_layer_0]
+- p: [7, 8]
+  k: NEXT
+  l: [asergo_layer_0]
+- p: [16, 15]
+  k: MUTE
+  l: [asergo_layer_0]
+- p: [13, 24]
+  k: Gui+V
+  l: [asergo_layer_0]
+- p: [14, 25]
+  k: Meh+V
+  l: [asergo_layer_0]
+- p: [1, 2]
+  k: Gui+[
+  l: [asergo_layer_0]
+- p: [2, 3]
+  k: Gui+]
+  l: [asergo_layer_0]
+- p: [8, 9]
+  k: Ctl+Gui+Q
+  l: [asergo_layer_0]
+- p: [8, 18]
+  k: ;
+  l: [asergo_layer_0]
+- p: [9, 19]
+  k: ''''
+  l: [asergo_layer_0]
+- p: [13, 14]
+  k: Gui+TAB
+  l: [asergo_layer_0]
+- p: [2, 12]
+  k: ESC
+  l: [asergo_layer_0]
+- p: [3, 13]
+  k: TAB
+  l: [asergo_layer_0]
+- p: [33, 34]
+  k: {t: hyper_oneshot_layer_5, h: sticky}
+  l: [asergo_layer_0]
+- p: [29, 30]
+  k: {t: BT, h: sticky}
+  l: [asergo_layer_0]
+- p: [12, 3]
+  k: Sft+Gui+T
+  l: [asergo_layer_0]
+- p: [4, 14]
+  k: F13
+  l: [asergo_layer_0]
+- p: [31, 37]
+  k: {t: clean_plus_layer_8, h: toggle}
+  l: [asergo_layer_0]
