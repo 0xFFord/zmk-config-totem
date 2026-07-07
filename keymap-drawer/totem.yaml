@@ -289,11 +289,11 @@ layers:
   - E
   - R
   - G
-  - H
-  - N
-  - I
-  - O
-  - P
+  - {t: H, h: AltGr+Ctl+RIGHT SHIFT}
+  - {t: N, h: RIGHT SHIFT}
+  - {t: I, h: RIGHT COMMAND}
+  - {t: O, h: RIGHT ALT}
+  - {t: P, h: RIGHT CONTROL}
   - clean_plus_layer_8
   - X
   - Z
@@ -305,7 +305,7 @@ layers:
   - ','
   - .
   - /
-  - {t: ▽, type: trans}
+  - {t: ;, h: Sft+AltGr+Ctl+RIGHT COMMAND}
   - ENTER
   - BSPC
   - SPACE
@@ -345,9 +345,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - LALT
   - ESC
   - TAB
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -436,3 +436,5 @@ combos:
 - p: [31, 37]
   k: {t: gaming_layer_3, h: toggle}
   l: [asergo_layer_0, clean_layer_7]
+- p: [0, 20, 32, 37, 31, 30]
+  k: ''
