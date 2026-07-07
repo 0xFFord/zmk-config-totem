@@ -21,7 +21,7 @@ layers:
   - {t: I, h: RIGHT COMMAND}
   - {t: O, h: RIGHT ALT}
   - {t: P, h: RIGHT CONTROL}
-  - clean_layer_7
+  - clean_plus_layer_8
   - X
   - Z
   - C
@@ -138,7 +138,7 @@ layers:
   - I
   - O
   - P
-  - {t: ▽, type: trans}
+  - clean_plus_layer_8
   - LSHFT
   - Q
   - S
@@ -294,7 +294,7 @@ layers:
   - I
   - O
   - P
-  - {t: clean_plus_layer_8, type: held}
+  - clean_plus_layer_8
   - X
   - Z
   - C
@@ -435,4 +435,4 @@ combos:
   l: [asergo_layer_0]
 - p: [31, 37]
   k: {t: gaming_layer_3, h: toggle}
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, clean_layer_7]
