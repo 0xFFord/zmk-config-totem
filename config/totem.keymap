@@ -181,6 +181,11 @@
             key-positions = <31 37>;
             layers = <0 7>;
         };
+
+        test {
+            bindings = <&none>;
+            key-positions = <0 20 32 37 31 30>;
+        };
     };
 
     behaviors {
@@ -269,19 +274,19 @@
 
         clean_layer_7 {
             bindings = <
-       &kp Q  &kp W  &kp D      &kp T     &kp F        &kp Y    &kp U    &kp K      &kp L    &kp MINUS
-       &kp A  &kp S  &kp E      &kp R     &kp G        &kp H    &kp N    &kp I      &kp O    &kp P
-&mo 8  &kp X  &kp Z  &kp C      &kp V     &kp B        &kp J    &kp M    &kp COMMA  &kp DOT  &kp FSLH   &trans
-                     &kp ENTER  &kp BSPC  &kp SPACE    &kp RET  &kp TAB  &trans
+       &kp Q  &kp W  &kp D      &kp T     &kp F        &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
+       &kp A  &kp S  &kp E      &kp R     &kp G        &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
+&mo 8  &kp X  &kp Z  &kp C      &kp V     &kp B        &kp J                      &kp M              &kp COMMA            &kp DOT          &kp FSLH             &mt RS(RA(RC(RIGHT_COMMAND))) SEMI
+                     &kp ENTER  &kp BSPC  &kp SPACE    &kp RET                    &kp TAB            &trans
             >;
         };
 
         clean_plus_layer_8 {
             bindings = <
-        &kp N1  &kp N2  &kp N3   &kp N4   &kp N5     &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
-        &to 0   &trans  &trans   &trans   &kp F16    &trans  &trans  &trans  &trans  &trans
-&trans  &to 7   &kp F2  &kp F3   &kp F14  &kp F15    &trans  &trans  &trans  &trans  &trans  &trans
-                        &kp ESC  &kp TAB  &trans     &trans  &trans  &trans
+        &kp N1  &kp N2  &kp N3    &kp N4   &kp N5     &kp N6  &kp N7  &kp N8  &kp N9  &kp N0
+        &to 0   &trans  &trans    &trans   &kp F16    &trans  &trans  &trans  &trans  &trans
+&trans  &to 7   &kp F2  &kp F3    &kp F14  &kp F15    &trans  &trans  &trans  &trans  &trans  &trans
+                        &kp LALT  &kp ESC  &kp TAB    &trans  &trans  &trans
             >;
         };
     };
