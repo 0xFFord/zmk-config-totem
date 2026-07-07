@@ -219,8 +219,8 @@ path.combo {
 </g>
 <g transform="translate(34, 209) rotate(-10.0)" class="key keypos-20">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<a href="#clean_layer_7">
-<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">clean_laye…</tspan></text>
+<a href="#clean_plus_layer_8">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">clean_plus…</tspan></text>
 </a></g>
 <g transform="translate(97, 223) rotate(-10.0)" class="key keypos-21">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -864,10 +864,11 @@ path.combo {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">P</text>
 </g>
-<g transform="translate(34, 209) rotate(-10.0)" class="key trans keypos-20">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
-</g>
+<g transform="translate(34, 209) rotate(-10.0)" class="key keypos-20">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
+<a href="#clean_plus_layer_8">
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">clean_plus…</tspan></text>
+</a></g>
 <g transform="translate(97, 223) rotate(-10.0)" class="key keypos-21">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">LSHFT</text>
@@ -1538,10 +1539,10 @@ path.combo {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">P</text>
 </g>
-<g transform="translate(34, 209) rotate(-10.0)" class="key held keypos-20">
-<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key held"/>
+<g transform="translate(34, 209) rotate(-10.0)" class="key keypos-20">
+<rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <a href="#clean_plus_layer_8">
-<text x="0" y="0" class="key held tap layer-activator"><tspan style="font-size: 64%">clean_plus…</tspan></text>
+<text x="0" y="0" class="key tap layer-activator"><tspan style="font-size: 64%">clean_plus…</tspan></text>
 </a></g>
 <g transform="translate(97, 223) rotate(-10.0)" class="key keypos-21">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -1610,6 +1611,14 @@ path.combo {
 <g transform="translate(596, 236)" class="key trans keypos-37">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
+</g>
+<g class="combo combopos-0">
+<path d="M706,222 l91,-11" class="combo"/>
+<path d="M706,222 l-91,11" class="combo"/>
+<rect rx="6" ry="6" x="692" y="209" width="28" height="26" class="combo"/>
+<a href="#gaming_layer_3">
+<text x="706" y="222" class="combo tap layer-activator"><tspan style="font-size: 64%">gaming_lay…</tspan></text>
+</a><text x="706" y="233" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
