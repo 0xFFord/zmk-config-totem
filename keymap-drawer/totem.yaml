@@ -295,7 +295,7 @@ layers:
   - {t: O, h: RIGHT ALT}
   - {t: P, h: RIGHT CONTROL}
   - clean_plus_layer_8
-  - X
+  - LEFT SHIFT
   - Z
   - C
   - V
