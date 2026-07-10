@@ -274,10 +274,10 @@
 
         clean_layer_7 {
             bindings = <
-       &kp Q  &kp W  &kp D      &kp T     &kp F        &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
-       &kp A  &kp S  &kp E      &kp R     &kp G        &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
-&mo 8  &kp X  &kp Z  &kp C      &kp V     &kp B        &kp J                      &kp M              &kp COMMA            &kp DOT          &kp FSLH             &mt RS(RA(RC(RIGHT_COMMAND))) SEMI
-                     &kp ENTER  &kp BSPC  &kp SPACE    &kp RET                    &kp TAB            &trans
+       &kp Q           &kp W  &kp D      &kp T     &kp F        &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
+       &kp A           &kp S  &kp E      &kp R     &kp G        &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
+&mo 8  &kp LEFT_SHIFT  &kp Z  &kp C      &kp V     &kp B        &kp J                      &kp M              &kp COMMA            &kp DOT          &kp FSLH             &mt RS(RA(RC(RIGHT_COMMAND))) SEMI
+                              &kp ENTER  &kp BSPC  &kp SPACE    &kp RET                    &kp TAB            &trans
             >;
         };
 
