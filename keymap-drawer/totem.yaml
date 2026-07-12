@@ -357,28 +357,28 @@ combos:
   l: [asergo_layer_0]
 - p: [7, 17]
   k: UP ARROW
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [17, 28]
   k: DOWN
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [17, 16]
   k: LEFT
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [17, 18]
   k: RIGHT
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [6, 16]
   k: VOL UP
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [16, 27]
   k: VOL DN
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [5, 15]
   k: BRIGHTNESS INC
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [15, 26]
   k: BRIGHTNESS DEC
-  l: [asergo_layer_0, spc_layer_1, ret_layer_2, BT]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [5, 6]
   k: PREV
   l: [asergo_layer_0]
@@ -431,16 +431,10 @@ combos:
   k: Sft+Gui+T
   l: [asergo_layer_0]
 - p: [4, 14]
-  k: F14
+  k: F13
   l: [asergo_layer_0]
 - p: [31, 37]
   k: {t: gaming_layer_3, h: toggle}
   l: [asergo_layer_0, clean_layer_7]
 - p: [0, 20, 32, 37, 31, 30]
   k: ''
-- p: [29, 28]
-  k: Sft+F13
-- p: [29, 18]
-  k: Alt+Sft+F14
-- p: [18, 8]
-  k: Meh+F14
