@@ -22,49 +22,49 @@
         up-combo {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 17>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         down-combo {
             bindings = <&kp DOWN>;
             key-positions = <17 28>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         left-combo {
             bindings = <&kp LEFT>;
             key-positions = <17 16>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         right-combo {
             bindings = <&kp RIGHT>;
             key-positions = <17 18>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         vol-up-combo {
             bindings = <&kp C_VOL_UP>;
             key-positions = <6 16>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         vol-down-combo {
             bindings = <&kp C_VOL_DN>;
             key-positions = <16 27>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         bright-up-combo {
             bindings = <&kp C_BRIGHTNESS_INC>;
             key-positions = <5 15>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         bright-down-combo {
             bindings = <&kp C_BRIGHTNESS_DEC>;
             key-positions = <15 26>;
-            layers = <0 1 2 6>;
+            layers = <0 3 7>;
         };
 
         prev-combo {
@@ -171,7 +171,7 @@
         };
 
         raycast {
-            bindings = <&kp F14>;
+            bindings = <&kp F13>;
             key-positions = <4 14>;
             layers = <0>;
         };
@@ -185,21 +185,6 @@
         test {
             bindings = <&none>;
             key-positions = <0 20 32 37 31 30>;
-        };
-
-        light {
-            bindings = <&kp LS(F13)>;
-            key-positions = <29 28>;
-        };
-
-        shutters_down {
-            bindings = <&kp LA(LS(F14))>;
-            key-positions = <29 18>;
-        };
-
-        shutters_up {
-            bindings = <&kp LA(LS(LC(F14)))>;
-            key-positions = <18 8>;
         };
     };
 
