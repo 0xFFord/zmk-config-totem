@@ -22,49 +22,49 @@
         up-combo {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 17>;
-            layers = <0 3 7>;
+            layers = <0>;
         };
 
         down-combo {
             bindings = <&kp DOWN>;
             key-positions = <17 28>;
-            layers = <0 3 7>;
+            layers = <0>;
         };
 
         left-combo {
             bindings = <&kp LEFT>;
             key-positions = <17 16>;
-            layers = <0 3 7>;
+            layers = <0>;
         };
 
         right-combo {
             bindings = <&kp RIGHT>;
             key-positions = <17 18>;
-            layers = <0 3 7>;
+            layers = <0>;
         };
 
         vol-up-combo {
             bindings = <&kp C_VOL_UP>;
             key-positions = <6 16>;
-            layers = <0 3 7>;
+            layers = <0>;
         };
 
         vol-down-combo {
             bindings = <&kp C_VOL_DN>;
             key-positions = <16 27>;
-            layers = <0 3 7>;
+            layers = <0>;
         };
 
         bright-up-combo {
             bindings = <&kp C_BRIGHTNESS_INC>;
             key-positions = <5 15>;
-            layers = <0 3 7>;
+            layers = <0>;
         };
 
         bright-down-combo {
             bindings = <&kp C_BRIGHTNESS_DEC>;
             key-positions = <15 26>;
-            layers = <0 3 7>;
+            layers = <0 1 2 6>;
         };
 
         prev-combo {
@@ -274,10 +274,10 @@
 
         clean_layer_7 {
             bindings = <
-       &kp Q  &kp W  &kp D      &kp T     &kp F        &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
-       &kp A  &kp S  &kp E      &kp R     &kp G        &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
-&mo 8  &kp X  &kp Z  &kp C      &kp V     &kp B        &kp J                      &kp M              &kp COMMA            &kp DOT          &kp FSLH             &mt RS(RA(RC(RIGHT_COMMAND))) SEMI
-                     &kp ENTER  &kp BSPC  &kp SPACE    &kp RET                    &kp TAB            &trans
+       &kp Q           &kp W  &kp D      &kp T     &kp F        &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
+       &kp A           &kp S  &kp E      &kp R     &kp G        &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
+&mo 8  &kp LEFT_SHIFT  &kp Z  &kp C      &kp V     &kp B        &kp J                      &kp M              &kp COMMA            &kp DOT          &kp FSLH             &mt RS(RA(RC(RIGHT_COMMAND))) SEMI
+                              &kp ENTER  &kp BSPC  &kp SPACE    &kp RET                    &kp TAB            &trans
             >;
         };
 
