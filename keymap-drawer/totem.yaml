@@ -357,40 +357,40 @@ combos:
   l: [asergo_layer_0]
 - p: [7, 17]
   k: UP ARROW
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [17, 28]
   k: DOWN
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [17, 16]
   k: LEFT
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [17, 18]
   k: RIGHT
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [6, 16]
   k: VOL UP
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [16, 27]
   k: VOL DN
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [5, 15]
   k: BRIGHTNESS INC
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [15, 26]
   k: BRIGHTNESS DEC
-  l: [asergo_layer_0, spc_layer_1, ret_layer_2, BT]
+  l: [asergo_layer_0, spc_layer_1, ret_layer_2, gaming_layer_3, BT, clean_layer_7]
 - p: [5, 6]
   k: PREV
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [6, 7]
   k: PLAY PAUSE
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [7, 8]
   k: NEXT
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [16, 15]
   k: MUTE
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [13, 24]
   k: Gui+V
   l: [asergo_layer_0]
@@ -405,13 +405,13 @@ combos:
   l: [asergo_layer_0]
 - p: [8, 9]
   k: Ctl+Gui+Q
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [8, 18]
   k: ;
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [9, 19]
   k: ''''
-  l: [asergo_layer_0]
+  l: [asergo_layer_0, gaming_layer_3, clean_layer_7]
 - p: [13, 14]
   k: Gui+TAB
   l: [asergo_layer_0]
