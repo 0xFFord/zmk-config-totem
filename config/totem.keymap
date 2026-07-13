@@ -22,73 +22,73 @@
         up-combo {
             bindings = <&kp UP_ARROW>;
             key-positions = <7 17>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         down-combo {
             bindings = <&kp DOWN>;
             key-positions = <17 28>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         left-combo {
             bindings = <&kp LEFT>;
             key-positions = <17 16>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         right-combo {
             bindings = <&kp RIGHT>;
             key-positions = <17 18>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         vol-up-combo {
             bindings = <&kp C_VOL_UP>;
             key-positions = <6 16>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         vol-down-combo {
             bindings = <&kp C_VOL_DN>;
             key-positions = <16 27>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         bright-up-combo {
             bindings = <&kp C_BRIGHTNESS_INC>;
             key-positions = <5 15>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         bright-down-combo {
             bindings = <&kp C_BRIGHTNESS_DEC>;
             key-positions = <15 26>;
-            layers = <0 1 2 6>;
+            layers = <0 1 2 3 6 7>;
         };
 
         prev-combo {
             bindings = <&kp C_PREV>;
             key-positions = <5 6>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         pause-combo {
             bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <6 7>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         next-combo {
             bindings = <&kp C_NEXT>;
             key-positions = <7 8>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         mute-combo {
             bindings = <&kp C_MUTE>;
             key-positions = <16 15>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         paste-combo {
@@ -118,19 +118,19 @@
         sleep {
             bindings = <&kp LC(LG(Q))>;
             key-positions = <8 9>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         colon {
             bindings = <&kp SEMI>;
             key-positions = <8 18>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         apos {
             bindings = <&kp APOS>;
             key-positions = <9 19>;
-            layers = <0>;
+            layers = <0 3 7>;
         };
 
         cmd_tab {
