@@ -335,10 +335,10 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: clean_layer_7, h: toggle}
+  - X
   - F2
   - F3
-  - F14
-  - F15
+  - F1
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -438,3 +438,5 @@ combos:
   l: [asergo_layer_0, clean_layer_7]
 - p: [0, 20, 32, 37, 31, 30]
   k: ''
+- p: [19, 30]
+  k: '?'
