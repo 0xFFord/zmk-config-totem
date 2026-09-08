@@ -4,9 +4,18 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &mt {
-    quick-tap-ms = <100>;
-    flavor = "tap-preferred";
-    tapping-term-ms = <170>;
+    // "balanced" resolves the hold as soon as the OTHER key is released,
+    // instead of always waiting out tapping-term-ms the way "tap-preferred"
+    // does. That wait was the felt delay on every home-row mod.
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+    // Tap, then press again within this window, to hold the key and repeat
+    // the letter instead of triggering the modifier.
+    quick-tap-ms = <175>;
+    // The setting that makes "balanced" safe: if another key was pressed
+    // less than this long ago, resolve instantly as a tap. Mid-word rolls
+    // can no longer misfire a modifier.
+    require-prior-idle-ms = <150>;
 };
 
 / {
@@ -182,14 +191,21 @@
             layers = <0 7>;
         };
 
+        // layers = <0> added 2026-09-08: without it this combo is live on
+        // EVERY layer, including gaming layer 3, where position 0 is TAB.
+        // A key that participates in a combo has its press held back until
+        // the combo resolves or times out, so this cost TAB latency in game.
         test {
             bindings = <&none>;
             key-positions = <0 20 32 37 31 30>;
+            layers = <0>;
         };
 
+        // layers = <0> added 2026-09-08, same reason as the combo above.
         question-mark {
             bindings = <&kp QUESTION>;
             key-positions = <19 30>;
+            layers = <0>;
         };
     };
 
