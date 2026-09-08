@@ -438,5 +438,7 @@ combos:
   l: [asergo_layer_0, clean_layer_7]
 - p: [0, 20, 32, 37, 31, 30]
   k: ''
+  l: [asergo_layer_0]
 - p: [19, 30]
   k: '?'
+  l: [asergo_layer_0]
