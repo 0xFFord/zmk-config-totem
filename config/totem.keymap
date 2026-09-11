@@ -4,18 +4,38 @@
 #include <dt-bindings/zmk/outputs.h>
 
 &mt {
-    // "balanced" resolves the hold as soon as the OTHER key is released,
-    // instead of always waiting out tapping-term-ms the way "tap-preferred"
-    // does. That wait was the felt delay on every home-row mod.
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-    // Tap, then press again within this window, to hold the key and repeat
-    // the letter instead of triggering the modifier.
-    quick-tap-ms = <175>;
-    // The setting that makes "balanced" safe: if another key was pressed
-    // less than this long ago, resolve instantly as a tap. Mid-word rolls
-    // can no longer misfire a modifier.
-    require-prior-idle-ms = <150>;
+    // Reverted 2026-09-11 to the pre-2026-09-08 settings, after the "balanced"
+    // experiment raised mistypes and made the thumb keys unreliable.
+    //
+    // "tap-preferred" never turns into a modifier just because another key was
+    // pressed - it only holds if you actually hold past tapping-term-ms. That
+    // costs a wait before a modifier engages, and that wait is the price of
+    // never misfiring mid-word. It is the right trade for this board.
+    //
+    // Do NOT add require-prior-idle-ms here. &mt is shared with the thumb keys
+    // (position 33 = LEFT_SHIFT/BSPC, position 36 = RIGHT_ALT/TAB), and on a
+    // thumb it forces a tap when you meant a hold - Backspace instead of Shift,
+    // deleting a character instead of capitalising one. That was the 2026-09-08
+    // regression.
+    flavor = "tap-preferred";
+    tapping-term-ms = <170>;
+    // quick-tap-ms: tap a key, press it again within this window, and it holds
+    // the LETTER (auto-repeating) instead of becoming the modifier.
+    //
+    // The window is measured from the FIRST PRESS, not the release - verified
+    // in zmk/app/src/behaviors/behavior_hold_tap.c, where store_last_hold_tapped
+    // records hold_tap->timestamp, the press. So a 90 ms tap inside a 150 ms
+    // window leaves only ~60 ms to re-press. That is why this needs intent and
+    // will not fire by accident.
+    //
+    // The cost is narrow: is_quick_tap() requires
+    // last_tapped.position == hold_tap->position, so the modifier is only ever
+    // delayed on the exact key just tapped - not on the keyboard generally.
+    //
+    // Was 100 (too tight to actually use), briefly 175 (too easy), now 150.
+    // Raise to make repeat easier, lower to make the modifier available sooner
+    // after tapping that same key. One dial, both directions.
+    quick-tap-ms = <150>;
 };
 
 / {
@@ -201,9 +221,13 @@
             layers = <0>;
         };
 
-        // layers = <0> added 2026-09-08, same reason as the combo above.
-        question-mark {
-            bindings = <&kp QUESTION>;
+        // layers = <0> added 2026-09-08: without it this combo is live on every
+        // layer, including gaming layer 3.
+        // Changed 2026-09-11 from &kp QUESTION to &kp PLUS at the owner's
+        // request. Node renamed to match. Positions 19 and 30 are both on the
+        // right half (row 1 outer, row 2 outer).
+        plus {
+            bindings = <&kp PLUS>;
             key-positions = <19 30>;
             layers = <0>;
         };
