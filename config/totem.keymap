@@ -231,6 +231,17 @@
             key-positions = <19 30>;
             layers = <0>;
         };
+
+        // Added 2026-09-17 at the owner's request: G (position 14, the
+        // LA(LC(LSHFT)) mod-tap) together with the left thumb Space
+        // (position 34, &lt 1 SPACE) sends a plain Enter.
+        // layers = <0> keeps it off the gaming layers, where position 34 is
+        // the game Space and must not carry combo latency.
+        enter {
+            bindings = <&kp RET>;
+            key-positions = <14 34>;
+            layers = <0>;
+        };
     };
 
     behaviors {
