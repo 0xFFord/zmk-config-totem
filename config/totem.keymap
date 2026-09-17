@@ -231,6 +231,17 @@
             key-positions = <19 30>;
             layers = <0>;
         };
+
+        // Added 2026-09-17 at the owner's request: G (position 14, the
+        // LA(LC(LSHFT)) mod-tap) together with the left thumb Space
+        // (position 34, &lt 1 SPACE) sends a plain Enter.
+        // layers = <0> keeps it off the gaming layers, where position 34 is
+        // the game Space and must not carry combo latency.
+        enter {
+            bindings = <&kp RET>;
+            key-positions = <14 34>;
+            layers = <0>;
+        };
     };
 
     behaviors {
@@ -242,71 +253,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LGUI)>;
             keep-mods = <(MOD_LGUI)>;
-        };
-
-        // Left thumb Space with the left Shift+Control+Option all held sends a
-        // plain Enter. Replaces the 14+34 positional combo tried on 2026-09-17:
-        // a combo needs both keys down inside the combo window, this does not
-        // care how long G has been held.
-        //
-        // ZMK's mod-morph fires when ANY modifier in `mods` is held, never
-        // "all of them", so requiring three modifiers takes three nested
-        // morphs: Shift outermost, then Control, then Option, and only the
-        // innermost tail reaches &kp RET. Each morph's unmorphed branch is a
-        // plain Space, so any chord that stops short of all three still types
-        // a space.
-        //
-        // No keep-mods anywhere in the chain: each matched modifier is masked
-        // off, which is what makes the result a BASIC Enter rather than
-        // Shift+Control+Option+Enter.
-        //
-        // Cost of the chain, by design and unavoidable with these primitives:
-        // a chord holding Shift but NOT all three has its Shift (and Control,
-        // if held) masked, so Shift+Space and Shift+Control+Space type a plain
-        // space. Control+Space, Option+Space and Control+Option+Space are
-        // untouched - they never match the outermost Shift morph. Shift is
-        // outermost precisely because Shift+Space is the least-used of them.
-        //
-        // Left-hand modifiers only, matching the G key at position 14
-        // (&mt LA(LC(LEFT_SHIFT)) G). The right-hand SCA key at position 15
-        // (&mt RA(RC(RIGHT_SHIFT)) H) sends right-side modifiers and does NOT
-        // trigger this.
-        sca_space_opt: sca_space_opt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SCA_SPACE_OPT";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&kp RET>;
-            mods = <(MOD_LALT)>;
-        };
-
-        sca_space_ctrl: sca_space_ctrl {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SCA_SPACE_CTRL";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&sca_space_opt>;
-            mods = <(MOD_LCTL)>;
-        };
-
-        sca_space: sca_space {
-            compatible = "zmk,behavior-mod-morph";
-            label = "SCA_SPACE";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE>, <&sca_space_ctrl>;
-            mods = <(MOD_LSFT)>;
-        };
-
-        // Stand-in for &lt 1 SPACE at position 34: same hold (layer 1), but the
-        // tap goes through the morph chain above instead of straight to SPACE.
-        // Values copied from ZMK's stock &lt in behaviors.dtsi - tap-preferred,
-        // 200 ms - so the thumb keeps the exact feel it had. This is NOT the
-        // &mt 170 ms tuning; &lt was never overridden in this config.
-        lt_sca_space: lt_sca_space {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LT_SCA_SPACE";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&sca_space>;
         };
     };
 
@@ -323,7 +269,7 @@
        &kp Q               &kp W           &kp D               &kp T                &kp F                       &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
        &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND E  &mt LEFT_SHIFT R     &mt LA(LC(LEFT_SHIFT)) G    &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
 &mo 8  &kp X               &kp Z           &kp C               &kp V                &kp B                       &kp J                      &kp M              &kp COMMA            &kp DOT          &mt RS(RA(RC(RIGHT_META))) FSLH  &trans
-                                           &trans              &mt LEFT_SHIFT BSPC  &lt_sca_space 1 0                 &lt 2 RET                  &mt RIGHT_ALT TAB  &trans
+                                           &trans              &mt LEFT_SHIFT BSPC  &lt 1 SPACE                 &lt 2 RET                  &mt RIGHT_ALT TAB  &trans
             >;
         };
 
