@@ -35,7 +35,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BSPC, h: LEFT SHIFT}
-  - {t: SPACE, h: spc_layer_1}
+  - {t: SPACE, h: spc_layer_1, s: SPACE}
   - {t: RET, h: ret_layer_2}
   - {t: TAB, h: RIGHT ALT}
   - {t: ▽, type: trans}
@@ -441,7 +441,4 @@ combos:
   l: [asergo_layer_0]
 - p: [19, 30]
   k: +
-  l: [asergo_layer_0]
-- p: [14, 34]
-  k: RET
   l: [asergo_layer_0]

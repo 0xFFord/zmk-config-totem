@@ -281,7 +281,8 @@ path.combo {
 <text x="0" y="0" class="key tap">SPACE</text>
 <a href="#spc_layer_1">
 <text x="0" y="24" class="key hold layer-activator"><tspan style="font-size: 64%">spc_layer_1</tspan></text>
-</a></g>
+</a><text x="0" y="-24" class="key shifted">SPACE</text>
+</g>
 <g transform="translate(470, 270) rotate(-30.0)" class="key keypos-35">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">RET</text>
@@ -445,12 +446,6 @@ path.combo {
 <g class="combo combopos-29">
 <rect rx="6" ry="6" x="745" y="183" width="28" height="26" class="combo"/>
 <text x="759" y="196" class="combo tap">+</text>
-</g>
-<g class="combo combopos-30">
-<path d="M356,196 l-19,-56" class="combo"/>
-<path d="M356,196 l19,56" class="combo"/>
-<rect rx="6" ry="6" x="342" y="183" width="28" height="26" class="combo"/>
-<text x="356" y="196" class="combo tap">RET</text>
 </g>
 </g>
 </g>
