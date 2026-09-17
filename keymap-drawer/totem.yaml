@@ -442,3 +442,6 @@ combos:
 - p: [19, 30]
   k: +
   l: [asergo_layer_0]
+- p: [14, 34]
+  k: RET
+  l: [asergo_layer_0]
