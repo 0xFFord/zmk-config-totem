@@ -237,6 +237,14 @@
         // (position 34, &lt 1 SPACE) sends a plain Enter.
         // layers = <0> keeps it off the gaming layers, where position 34 is
         // the game Space and must not carry combo latency.
+        //
+        // Do NOT replace this with a mod-morph on the Space key. Tried on
+        // 2026-09-17 and reverted the same day: ZMK's mod-morph fires on ANY
+        // modifier in `mods`, never all of them, so requiring three modifiers
+        // needs three nested morphs - and the modifier masking does not carry
+        // through the nesting. The outer Shift survived, so the keyboard sent
+        // Shift+Enter instead of Enter. The combo is the working approach; its
+        // only cost is that both keys must go down inside the combo window.
         enter {
             bindings = <&kp RET>;
             key-positions = <14 34>;
