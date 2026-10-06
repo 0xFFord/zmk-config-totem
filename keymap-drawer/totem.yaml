@@ -445,3 +445,6 @@ combos:
 - p: [14, 34]
   k: RET
   l: [asergo_layer_0]
+- p: [35, 36]
+  k: Gui+RET
+  l: [asergo_layer_0]

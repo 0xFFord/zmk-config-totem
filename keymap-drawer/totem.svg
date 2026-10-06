@@ -452,6 +452,10 @@ path.combo {
 <rect rx="6" ry="6" x="342" y="183" width="28" height="26" class="combo"/>
 <text x="356" y="196" class="combo tap">RET</text>
 </g>
+<g class="combo combopos-31">
+<rect rx="6" ry="6" x="486" y="245" width="28" height="26" class="combo"/>
+<text x="500" y="258" class="combo tap">Gui+RET</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 366)" class="layer-spc_layer_1">
