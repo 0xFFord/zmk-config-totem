@@ -250,6 +250,17 @@
             key-positions = <14 34>;
             layers = <0>;
         };
+
+        // Added 2026-10-06 at the owner's request: both right thumb keys
+        // together - Enter (position 35, &lt 2 RET) and Tab (position 36,
+        // &mt RIGHT_ALT TAB) - send Command+Enter, used to submit AI prompts.
+        // layers = <0> keeps it off the gaming layers, where 35 and 36 are the
+        // game Enter and Tab and must not wait on a combo.
+        cmd_enter {
+            bindings = <&kp LG(RET)>;
+            key-positions = <35 36>;
+            layers = <0>;
+        };
     };
 
     behaviors {
