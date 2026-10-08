@@ -180,8 +180,13 @@
             layers = <0>;
         };
 
-        oneshot_hyper {
-            bindings = <&sl 5>;
+        // Changed 2026-10-08 at the owner's request: both left thumb keys
+        // together - Backspace (position 33) and Space (position 34) - send
+        // Return, so Return is reachable while the right hand is on the mouse.
+        // Hold a home-row modifier for Shift+Return, Cmd+Return, etc.
+        // Was &sl 5 (one-shot Hyper layer); layer 5 is now held on position 32.
+        thumb_return {
+            bindings = <&kp RET>;
             key-positions = <33 34>;
             layers = <0>;
         };
@@ -209,16 +214,6 @@
             bindings = <&tog 3>;
             key-positions = <31 37>;
             layers = <0 7>;
-        };
-
-        // layers = <0> added 2026-09-08: without it this combo is live on
-        // EVERY layer, including gaming layer 3, where position 0 is TAB.
-        // A key that participates in a combo has its press held back until
-        // the combo resolves or times out, so this cost TAB latency in game.
-        test {
-            bindings = <&none>;
-            key-positions = <0 20 32 37 31 30>;
-            layers = <0>;
         };
 
         // layers = <0> added 2026-09-08: without it this combo is live on every
@@ -281,6 +276,11 @@
         /*
          * Asergo is the user's primary custom non-QWERTY typing layout.
          * Its name comes from the home-row sequence A S E R G, plus O for "aser go".
+         *
+         * Position 32 (outer left thumb), added 2026-10-08 at the owner's
+         * request: tap = Tab, hold = layer 5 (Hyper on every key) for as long
+         * as the thumb stays down. Default &lt timing (tap-preferred, 200 ms):
+         * hold 32 for 200 ms before tapping a letter, or you get Tab + letter.
          */
 
         asergo_layer_0 {
@@ -288,7 +288,7 @@
        &kp Q               &kp W           &kp D               &kp T                &kp F                       &kp Y                      &kp U              &kp K                &kp L            &kp MINUS
        &mt LEFT_CONTROL A  &mt LEFT_ALT S  &mt LEFT_COMMAND E  &mt LEFT_SHIFT R     &mt LA(LC(LEFT_SHIFT)) G    &mt RA(RC(RIGHT_SHIFT)) H  &mt RIGHT_SHIFT N  &mt RIGHT_COMMAND I  &mt RIGHT_ALT O  &mt RIGHT_CONTROL P
 &mo 8  &kp X               &kp Z           &kp C               &kp V                &kp B                       &kp J                      &kp M              &kp COMMA            &kp DOT          &mt RS(RA(RC(RIGHT_META))) FSLH  &trans
-                                           &trans              &mt LEFT_SHIFT BSPC  &lt 1 SPACE                 &lt 2 RET                  &mt RIGHT_ALT TAB  &trans
+                                           &lt 5 TAB           &mt LEFT_SHIFT BSPC  &lt 1 SPACE                 &lt 2 RET                  &mt RIGHT_ALT TAB  &trans
             >;
         };
 
