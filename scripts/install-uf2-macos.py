@@ -19,8 +19,13 @@ def configure_output() -> None:
             stream.reconfigure(line_buffering=True)
 
 
-def notify(message: str, *, title: str = "TOTEM firmware") -> None:
+def notify(message: str, *, title: str = "TOTEM firmware", sound: str | None = None) -> None:
+    # osascript notifications belong to Script Editor. They stay on screen
+    # until clicked only when System Settings > Notifications > Script Editor
+    # uses the Persistent alert style; with Temporary they vanish in seconds.
     script = f'display notification "{message}" with title "{title}"'
+    if sound:
+        script += f' sound name "{sound}"'
     subprocess.run(["osascript", "-e", script], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
 
@@ -84,7 +89,7 @@ def wait_for_bootloader_volume(label: str, timeout_seconds: int, bootloader_volu
 
     print(f"\n{label}: connect this half, then double-click reset to enter the UF2 bootloader.")
     print("Waiting for a bootloader volume to appear in /Volumes ...")
-    notify(f"Connect {label.lower()} half and double-click reset.")
+    notify(f"Waiting for you: connect {label.lower()} half and double-click reset.", sound="Glass")
 
     start = time.monotonic()
     while True:
