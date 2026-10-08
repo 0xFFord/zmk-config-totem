@@ -33,7 +33,7 @@ layers:
   - .
   - {t: /, h: Sft+AltGr+Ctl+RIGHT META}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: TAB, h: hyper_oneshot_layer_5}
   - {t: BSPC, h: LEFT SHIFT}
   - {t: SPACE, h: spc_layer_1}
   - {t: RET, h: ret_layer_2}
@@ -228,9 +228,9 @@ layers:
   - Hyper+.
   - Hyper+/
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: Hyper+BSPC, type: held}
-  - {t: Hyper+SPACE, type: held}
+  - {type: held}
+  - Hyper+BSPC
+  - Hyper+SPACE
   - Hyper+RET
   - Hyper+TAB
   - {t: ▽, type: trans}
@@ -422,7 +422,7 @@ combos:
   k: TAB
   l: [asergo_layer_0]
 - p: [33, 34]
-  k: {t: hyper_oneshot_layer_5, h: sticky}
+  k: RET
   l: [asergo_layer_0]
 - p: [29, 30]
   k: {t: BT, h: sticky}
@@ -436,9 +436,6 @@ combos:
 - p: [31, 37]
   k: {t: gaming_layer_3, h: toggle}
   l: [asergo_layer_0, clean_layer_7]
-- p: [0, 20, 32, 37, 31, 30]
-  k: ''
-  l: [asergo_layer_0]
 - p: [19, 30]
   k: +
   l: [asergo_layer_0]
